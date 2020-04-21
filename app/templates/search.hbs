@@ -28,14 +28,18 @@
                     let container = document.getElementById("propertiesDiv");
                     let propertyDiv = document.createElement("div");
                     propertyDiv.setAttribute("class", "property");
+                     propertyDiv.setAttribute("id", "newproperty");
                     let propertyList = document.createElement("ul");
+                    propertyList.setAttribute("id", "newDetails");
                     propertyList.setAttribute("class", "details");
                     let recentlyAdded = document.createElement("h3");
                     recentlyAdded.appendChild(document.createTextNode("Recently Added!"))
                     let image = document.createElement("img");
                     image.setAttribute("src", arg.image);
+                                        image.setAttribute("id", "newImages");
+
                     let title = document.createElement("h3");
-                    title.setAttribute("id","propertyTitle");
+                    title.setAttribute("id","newpropertyTitle");
                     title.appendChild(document.createTextNode(arg.title));
                     //   propertyList.appendChild(title);
                     //  title.setAttribute("class", "detail title");
@@ -43,6 +47,8 @@
                     owner.appendChild(document.createTextNode("Owner: " + arg.owner));
                     propertyList.appendChild(owner);
                     owner.setAttribute("class", "detail owner");
+                                        owner.setAttribute("id", "newowner");
+
                     let property = document.createElement("span");
                     property.appendChild(document.createTextNode("Property type: " + arg.property));
                     propertyList.appendChild(property);
@@ -68,7 +74,7 @@
                     propertyList.appendChild(bathrooms);
                     bathrooms.setAttribute("class", "detail bathrooms");
                     let kitchen = document.createElement("span");
-                    kitchen.appendChild(document.createTextNode("Kitche Type: " + arg.kitchen));
+                    kitchen.appendChild(document.createTextNode("Kitchen Type: " + arg.kitchen));
                     propertyList.appendChild(kitchen);
                     kitchen.setAttribute("class", "detail kitchen");
                     let wifi = document.createElement("span");
@@ -79,6 +85,8 @@
                     price.appendChild(document.createTextNode("Price: $" + arg.price));
                     propertyList.appendChild(price);
                     price.setAttribute("class", "detail price");
+                                        price.setAttribute("id", "newprice");
+
                 //  propertyDiv.appendChild(recentlyAdded);
                     propertyDiv.appendChild(title);
                     propertyDiv.appendChild(image);
@@ -92,3 +100,4 @@
         </div>
     </div>
 </Info>
+
