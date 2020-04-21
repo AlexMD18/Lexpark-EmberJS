@@ -1,33 +1,5 @@
 @import url(https://fonts.googleapis.com/css2?family=Raleway&display=swap);
 
-
-
-/* ADDED FOR THE NEW RENTALS */
-#newImages {
-  margin-top: 100px;
-
-}
-#newDetails {
-  top:200px;
-}
-#newproperty {
- margin: 10px;
-}
-#newprice {
-  margin-bottom: 100px;
-}
-#newpropertyTitle{
-  margin-bottom: 100px;
-
-}
-#propertyTitle{
-  padding-top: 20px;
-  padding-left: 1%;
-  color: #33065e;
-}
-/* ADDED FOR THE NEW RENTALS */
-
-
 * {
   margin: 0;
   padding: 0;
@@ -165,7 +137,6 @@ h2{
   from {opacity: .4} 
   to {opacity: 1}
 }
-
 
 a {
   color: #33065e;
@@ -679,7 +650,7 @@ i {
 .details p{
   margin-top: 5px;
   text-align: center;
-  margin-left: 310px;
+  margin-left: 270px;
   font-size: 1.5em;
 }
 
@@ -710,8 +681,7 @@ i {
 .rental .detail {
   flex-basis: 43%;
   font-weight: 300;
-  font-style: italic;
-  white-space: nowrap;
+
 }
 
 .rental.detailed p{
@@ -746,8 +716,6 @@ i {
   align-items: flex-start;
 }
 
-
-
 .rental.detailed .details {
   height: 100%;
 }
@@ -777,20 +745,19 @@ i {
 
 /*Property*/
 .property {
-  margin-top: 15px;
+  margin-top: 30px;
   background-color: #e6e6e6;
-  padding: 0px 45px;
+  padding: 0px 35px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
   line-height: 1.5;
-
+  height: 380px;
+  width: 1102px;
 }
 
 #propertyTitle{
-  padding-top: 20px;
-  padding-left: 1%;
+  margin-top: -220px;
+  padding-left: 28%;
   color: #33065e;
 }
 
@@ -799,65 +766,21 @@ i {
 }
 
 .property img {
+  margin-left: -1010px;
   border-radius: 5px;
-  height: 200px;
-  width: 210px;
-}
-
-.property .image {
-  flex-grow: 0;
-  height: 220px;
-  width: 210px;
-  text-align: center;
-  margin-top: 80px;
-  padding-bottom: 50px;
-}
-
-.property button.image {
-  position: relative;
-  cursor: pointer;
-  border: none;
-  background: transparent;
-  z-index: 1;
-}
-
-.property .image.large img {
-  max-width: 100%;
-  width: 500px;
-  height: 400px;
-}
-
-.property .image.large {
-  margin: 30px 25px 50px 25px;
-  flex-basis: 100%;
-}
-
-.property .image small {
-  display: block;
-  margin-top: -10px;
-  margin-bottom: 0px;
-  padding-left: 35px;
-  text-align: center;
-  color: #33065e;
-}
-
-.property .image.large small {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 150%;
+  height: 250px;
+  width: 250px;
 }
 
 .property .details {
-  text-align: left;
+  text-align: center;
   flex-basis: 38%;
   flex-grow: 2;
   display: flex;
   height: 160px;
   margin: 0px 60px;
-  margin-top: -40px;;
-  justify-content: space-between;
+  margin-top: -10px;
   flex-wrap: wrap;
-  align-content: space-around;
 }
 
 .property h3 {
@@ -865,21 +788,11 @@ i {
   font-weight: bold;
   text-align: center;
   line-height: 1.5;
-  margin-left: -405px;
-}
-
-.property h3 a {
-  display: inline;
-  font-weight: bold;
-  line-height: 1.5;
-
 }
 
 .property .detail {
   flex-basis: 50%;
   font-weight: 300;
-  font-style: italic;
-  white-space: nowrap;
 }
 
 .property.detailed p{
@@ -895,71 +808,6 @@ i {
   font-style: normal;
   margin-left: 25px;
   margin-top: 30px;
-}
-
-.property .map {
-  flex-grow: 0;
-  flex-basis: 30px;
-  font-size: 0;
-  margin: 0px 30px;
-  margin-top: 50px;
-}
-
-.property .map img {
-  width: 180px;
-  height: 180px;
-}
-
-.property.detailed {
-  align-items: flex-start;
-}
-
-.property.detailed .image {
-  flex-basis: 320px;
-  width: 500px;
-  height: 500px;
-}
-
-.property.detailed .image.large {
-  margin: 30px 25px 50px 25px;
-  flex-basis: 100%;
-}
-
-.property.detailed .details {
-  height: auto;
-}
-
-.property.detailed h3 {
-  font-size: 200%;
-  margin-top: 30px;
-  margin-bottom: 10px;
-}
-
-.property.detailed p  {
-  font-size: 140%;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding-left: 25px;
-  padding-right: 25px;
-  text-align: center;
-}
-
-.property.detailed .detail {
-  margin: 5px 0px;
-  flex-basis: 100%;
-  flex-shrink: 2;
-  text-align: center;
-}
-
-.property.detailed .map {
-  width: 500px;
-  height: 500px;
-  margin: 50px 25px 25px 25px;
-}
-
-.property.detailed .map img {
-  width: 500px;
-  height: 500px;
 }
 
 /*End Property*/
